@@ -1,0 +1,328 @@
+
+@import './test.css';
+@import './col.css';
+@import './nav.css';
+@import './resume.css';
+
+
+
+/*           main              */
+
+
+body {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+color: #333333;
+font-size: 16px;
+line-height: 1.5;
+background-color: #ffffff;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+
+body {padding: 18px 0 0 0;}
+@media (min-width: 801) {
+body {padding: 30px 0 0 0;}}
+
+
+.page{padding-top:40px;min-height:820px}
+@media screen and (max-width: 800px){.page{min-height:1px}}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.container-fluid:before, .container-fluid:after {
+  content: " ";
+  display: table;
+}
+.container-fluid:after {
+  clear: both;
+}
+
+.padding-top-zero {padding-top: 0;}
+.padding-top {padding-top: 50px;}
+@media screen and (min-width: 800px){
+  .padding-top-condition {padding-top: 50px;}
+}
+
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #222222;
+}
+
+h1, .h1 {
+  font-size: 28px;
+}
+h2, .h2 {
+  font-size: 25px;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.resume-info-section a:hover,
+.resume-info-section a:active,
+.resume-info-section a:focus {
+	color: #23527c;
+	text-decoration: underline;
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a:focus {
+	color: gray;
+	text-decoration: underline;
+}
+
+p{
+	padding: 5px 10px 5px 5px;
+	margin: 0 0 6px;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-bottom: 0;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+	font-size: 13px;
+}
+
+
+/*             my-profile        */
+
+@media (max-width: 800px) {
+.cols {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.col {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1em;
+}
+.col1 {
+  /* background: #BD4932; */
+}
+.col2 {
+  /* background: #105B63; */
+}
+
+.my-profile .my-img img{border-radius:50%}
+
+.my-profile .my-img{
+  width:130px;
+  display: inline-block;
+  position:relative;
+
+}
+.my-profile .my-name{
+  display:inline;
+  white-space:nowrap;
+}
+.my-profile .my-title{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+  display: block;
+  padding-bottom: 8px;
+  font-weight: normal;
+  color: #777777;
+}
+.my-profile .my-title::after{
+    content: "";
+    display: block;
+    height: 1px;
+    max-width: 200px;
+    border-bottom: solid 2px #f6f6f6;
+  }
+  .my-profile .my-email{font-size:12px}
+  .my-profile .my-tel{font-size:12px}
+
+  .col-n:before, .col-n:after {
+    content: "";
+    display: table;
+
+  }
+
+
+}
+@media (min-width: 801px) {
+
+  .my-profile {
+    text-align: right;
+
+  }
+  .my-profile .my-img{
+    width:220px;
+    padding: 3px;
+    padding-bottom: 0;
+    line-height: 1;
+    border: 1px solid #ddd;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    }
+  .my-profile .my-name{
+    margin:0 0 0 0;
+     white-space:nowrap;
+  }
+  .my-profile .my-title{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.5;
+    display: block;
+    padding-bottom: 8px;
+    font-weight: normal;
+    color: #777777;
+  }
+.my-profile .my-title::after{
+    content: "";
+    display: block;
+    height: 1px;
+    max-width: 200px;
+    border-bottom: solid 2px #f6f6f6;
+  }
+
+  .my-profile .my-email{font-size:12px}
+  .my-profile .my-tel{font-size:12px}
+}
+
+/*            bottom              */
+
+.button {
+    border: none;
+    margin: 2px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.resumeButton {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+
+    margin: 20px 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    width: 80px;
+    height: 35px;
+    box-sizing: border-box;
+
+}
+.resumeButton:hover {
+    background-color: #555555;
+    color: white;
+}
+
+
+/*       experience  section          */
+
+.timeline .item {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.timeline .item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline .jobTitle {
+  position: relative;
+}
+
+.timeline .jobTitle .icon {
+position: absolute;
+left: 0;
+top: 2px;
+}
+
+.timeline .jobTitle .name {
+  margin-top: 0;
+	margin-left: 50px;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 300;
+	/*color: #00BCD4;*/
+}
+
+.timeline .jobTitle .position {
+  margin-top: 0;
+	margin-left: 50px;
+  margin-bottom: 0;
+  font-size: 15px;
+  color: #666;
+}
+
+.timeline .job-desc {
+  color: #666;
+  font-size: 13px;
+}
+.timeline .job-desc{
+border-left: 3px solid #C8C8C8;
+position: relative;
+padding: 0 3px;
+margin-left: 18px;
+}
+
+/*           award section          */
+.award_list {
+  margin-bottom: 15px;
+  font-size: 14px;
+  margin-top:15px;
+}
+
+.award_list .item  {
+	margin-bottom: 7px;
+}
+
+.award_list .item emphasize {
+  border:1px dotted DodgerBlue;
+
+}
+
+.highlight a{
+  background-color: #d9ffd4;
+  border:1px dotted DodgerBlue
+}

@@ -1,0 +1,57 @@
+
+
+/*             resume-profile        */
+
+
+.resume-info .resume-info-section {
+  margin-bottom: 88px;
+  text-align: justify;
+  /* text-indent: 20px; */
+}
+
+.resume-info .resume-info-section > h2 {
+  margin-top: 0px;
+}
+
+.resume-info .resume-info-section > h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  max-width: 200px;
+  border-bottom: solid 2px #f6f6f6;
+}
+
+@media (min-width: 768px) {
+  .resume-info .resume-info-section > h2::after {
+    max-width: 360px;
+  }
+}
+
+.resume-info .resume-info-section-block {
+  margin-bottom: 40px;
+}
+
+.resume-info .resume-info-section-block:after {
+  display: block;
+  content: " ";
+  height: 8px;
+  max-width: 48px;
+  border-bottom: solid 2px #f6f6f6;
+}
+
+.resume-info .resume-info-section-block:last-child:after {
+  content: "";
+  display: none;
+}
+
+.resume-info .resume-info-section-block > h4 small {
+  display: block;
+}
+
+.resume-info .resume-info-section-block:last-child {
+  border-bottom: none;
+}
+
+.resume-info li {
+  padding-bottom: 16px;
+}
